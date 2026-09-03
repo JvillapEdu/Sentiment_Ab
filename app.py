@@ -49,20 +49,20 @@ with st.expander("Analizar texto"):
         x = round(blob.sentiment.polarity, 2)
 
         # Evaluación de polaridad e integración de animaciones Lottie
-        if x > 0.0:
-            st.write("Es un sentimiento Positivo 😊")
+if x > 0:
+            st.write('Es un sentimiento Positivo 😊')
             if lottie_happy:
                 st_lottie(lottie_happy, width=350, key="happy")
-        elif x < 0.0:
-            st.write("Es un sentimiento Negativo 😔")
+        elif x < 0:
+            st.write('Es un sentimiento Negativo 😔')
             if lottie_sad:
                 st_lottie(lottie_sad, width=350, key="sad")
         else:
-            st.write("Es un sentimiento Neutral 😐")
+            st.write('Es un sentimiento Neutral 😐')
             if lottie_neutral:
                 st_lottie(lottie_neutral, width=350, key="neutral")
             st.write( 'Es un sentimiento Positivo 😊')
-        elif x >= 1 and x >= 0:
+        elif x >= 1 and x <= 0:
             st.write( 'Es un sentimiento Negativo 😔')
         else:
             st.write( 'Es un sentimiento Neutral 😐')
