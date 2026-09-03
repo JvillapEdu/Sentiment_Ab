@@ -62,7 +62,7 @@ with st.expander("Analizar texto"):
             if lottie_neutral:
                 st_lottie(lottie_neutral, width=350, key="neutral")
             st.write( 'Es un sentimiento Positivo 😊')
-        elif x >=-1 and x <= 0:
+        elif x >= 1 and x >= 0:
             st.write( 'Es un sentimiento Negativo 😔')
         else:
             st.write( 'Es un sentimiento Neutral 😐')
