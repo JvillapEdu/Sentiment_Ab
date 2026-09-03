@@ -3,8 +3,6 @@ import pandas as pd
 import streamlit as st
 from PIL import Image
 from googletrans import Translator
-from streamlit_lottie import st_lottie
-import json
 
 st.title('Análisis de Sentimiento')
 image = Image.open('emoticones.jpg')
